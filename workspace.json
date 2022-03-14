@@ -17,6 +17,7 @@
     "api-shared-data-access-entities": "libs/api/shared-data-access-entities",
     "api-shared-data-access-mappings": "libs/api/shared-data-access-mappings",
     "api-shared-utils-decorators": "libs/api/shared-utils-decorators",
-    "api-utils-config": "libs/api/utils-config"
+    "api-utils-config": "libs/api/utils-config",
+    "web": "apps/web"
   }
 }
