@@ -31,4 +31,15 @@ export class UserService {
       throw new InternalServerErrorException(e, 'failed - create user');
     }
   }
+
+  async findById(id: string): Promise<UserEntity> {
+    try {
+      return await this.userRepository.findOneOrFail({ id });
+    } catch (e) {
+      throw new InternalServerErrorException(
+        { e, id },
+        'failed - find by user id'
+      );
+    }
+  }
 }
