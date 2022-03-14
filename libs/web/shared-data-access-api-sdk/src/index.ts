@@ -740,7 +740,7 @@ export interface Body {
     text: string;
 }
 
-export class ApiExceptionDto extends Error {
+export class ApiException extends Error {
     override message: string;
     status: number;
     response: string;
@@ -757,10 +757,10 @@ export class ApiExceptionDto extends Error {
         this.result = result;
     }
 
-    protected isApiExceptionDto = true;
+    protected isApiException = true;
 
-    static isApiExceptionDto(obj: any): obj is ApiExceptionDto {
-        return obj.isApiExceptionDto === true;
+    static isApiException(obj: any): obj is ApiException {
+        return obj.isApiException === true;
     }
 }
 
@@ -768,7 +768,7 @@ function throwException(message: string, status: number, response: string, heade
     if (result !== null && result !== undefined)
         return _observableThrow(result);
     else
-        return _observableThrow(new ApiExceptionDto(message, status, response, headers, null));
+        return _observableThrow(new ApiException(message, status, response, headers, null));
 }
 
 function blobToText(blob: any): Observable<string> {
