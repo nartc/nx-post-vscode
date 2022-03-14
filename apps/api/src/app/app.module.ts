@@ -7,6 +7,7 @@ import { ApiFeatureAuthModule } from '@nx-post-vscode/api/feature-auth';
 import { ApiFeatureCommentModule } from '@nx-post-vscode/api/feature-comment';
 import { ApiFeatureConfigModule } from '@nx-post-vscode/api/feature-config';
 import { ApiFeaturePostModule } from '@nx-post-vscode/api/feature-post';
+import { ApiFeatureSecurityModule } from '@nx-post-vscode/api/feature-security';
 import { ApiFeatureUserModule } from '@nx-post-vscode/api/feature-user';
 import {
   BaseProfile,
@@ -42,6 +43,7 @@ import { DbConfig, dbConfig } from '@nx-post-vscode/api/utils-config';
     ApiFeatureUserModule,
     ApiFeaturePostModule,
     ApiFeatureCommentModule,
+    ApiFeatureSecurityModule,
   ],
   providers: [BaseProfile, UserProfile, PostProfile, CommentProfile],
 })

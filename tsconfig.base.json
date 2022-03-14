@@ -24,6 +24,9 @@
       "@nx-post-vscode/api/data-access-post": [
         "libs/api/data-access-post/src/index.ts"
       ],
+      "@nx-post-vscode/api/data-access-security": [
+        "libs/api/data-access-security/src/index.ts"
+      ],
       "@nx-post-vscode/api/data-access-user": [
         "libs/api/data-access-user/src/index.ts"
       ],
@@ -39,6 +42,9 @@
       "@nx-post-vscode/api/feature-post": [
         "libs/api/feature-post/src/index.ts"
       ],
+      "@nx-post-vscode/api/feature-security": [
+        "libs/api/feature-security/src/index.ts"
+      ],
       "@nx-post-vscode/api/feature-user": [
         "libs/api/feature-user/src/index.ts"
       ],
@@ -50,6 +56,9 @@
       ],
       "@nx-post-vscode/api/shared-data-access-mappings": [
         "libs/api/shared-data-access-mappings/src/index.ts"
+      ],
+      "@nx-post-vscode/api/shared-utils-decorators": [
+        "libs/api/shared-utils-decorators/src/index.ts"
       ],
       "@nx-post-vscode/api/utils-config": ["libs/api/utils-config/src/index.ts"]
     }
