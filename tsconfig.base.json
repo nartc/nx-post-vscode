@@ -15,6 +15,9 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@nx-post-vscode/api/data-access-auth": [
+        "libs/api/data-access-auth/src/index.ts"
+      ],
       "@nx-post-vscode/api/data-access-comment": [
         "libs/api/data-access-comment/src/index.ts"
       ],
@@ -23,6 +26,9 @@
       ],
       "@nx-post-vscode/api/data-access-user": [
         "libs/api/data-access-user/src/index.ts"
+      ],
+      "@nx-post-vscode/api/feature-auth": [
+        "libs/api/feature-auth/src/index.ts"
       ],
       "@nx-post-vscode/api/feature-comment": [
         "libs/api/feature-comment/src/index.ts"
