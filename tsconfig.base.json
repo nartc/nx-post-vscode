@@ -36,8 +36,14 @@
       "@nx-post-vscode/api/feature-user": [
         "libs/api/feature-user/src/index.ts"
       ],
+      "@nx-post-vscode/api/shared-data-access-dtos": [
+        "libs/api/shared-data-access-dtos/src/index.ts"
+      ],
       "@nx-post-vscode/api/shared-data-access-entities": [
         "libs/api/shared-data-access-entities/src/index.ts"
+      ],
+      "@nx-post-vscode/api/shared-data-access-mappings": [
+        "libs/api/shared-data-access-mappings/src/index.ts"
       ],
       "@nx-post-vscode/api/utils-config": ["libs/api/utils-config/src/index.ts"]
     }

@@ -9,7 +9,9 @@
     "api-feature-config": "libs/api/feature-config",
     "api-feature-post": "libs/api/feature-post",
     "api-feature-user": "libs/api/feature-user",
+    "api-shared-data-access-dtos": "libs/api/shared-data-access-dtos",
     "api-shared-data-access-entities": "libs/api/shared-data-access-entities",
+    "api-shared-data-access-mappings": "libs/api/shared-data-access-mappings",
     "api-utils-config": "libs/api/utils-config"
   }
 }

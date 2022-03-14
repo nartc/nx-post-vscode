@@ -7,6 +7,12 @@ import { ApiFeatureCommentModule } from '@nx-post-vscode/api/feature-comment';
 import { ApiFeatureConfigModule } from '@nx-post-vscode/api/feature-config';
 import { ApiFeaturePostModule } from '@nx-post-vscode/api/feature-post';
 import { ApiFeatureUserModule } from '@nx-post-vscode/api/feature-user';
+import {
+  BaseProfile,
+  CommentProfile,
+  PostProfile,
+  UserProfile,
+} from '@nx-post-vscode/api/shared-data-access-mappings';
 import { DbConfig, dbConfig } from '@nx-post-vscode/api/utils-config';
 
 @Module({
@@ -35,5 +41,6 @@ import { DbConfig, dbConfig } from '@nx-post-vscode/api/utils-config';
     ApiFeaturePostModule,
     ApiFeatureCommentModule,
   ],
+  providers: [BaseProfile, UserProfile, PostProfile, CommentProfile],
 })
 export class AppModule {}
