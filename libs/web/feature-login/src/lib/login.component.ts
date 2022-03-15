@@ -86,13 +86,13 @@ export class LoginComponent {
   declarations: [LoginComponent],
   exports: [LoginComponent],
   imports: [
-    MatCardModule,
-    FormsModule,
-    MatFormFieldModule,
-    MatInputModule,
-    MatIconModule,
     CommonModule,
+    FormsModule,
     MatButtonModule,
+    MatCardModule,
+    MatFormFieldModule,
+    MatIconModule,
+    MatInputModule,
     RouterModule,
   ],
 })
