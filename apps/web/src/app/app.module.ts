@@ -1,14 +1,14 @@
 import { NgModule } from '@angular/core';
-import { MatButtonModule } from '@angular/material/button';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { API_BASE_URL } from '@nx-post-vscode/web/shared/data-access-api-sdk';
+import { WebShellModule } from '@nx-post-vscode/web/shell';
 import { environment } from '../environments/environment';
 import { AppComponent } from './app.component';
 
 @NgModule({
   declarations: [AppComponent],
-  imports: [BrowserModule, BrowserAnimationsModule, MatButtonModule],
+  imports: [BrowserModule, BrowserAnimationsModule, WebShellModule],
   providers: [{ provide: API_BASE_URL, useValue: environment.apiBaseUrl }],
   bootstrap: [AppComponent],
 })

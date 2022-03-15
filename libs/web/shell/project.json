@@ -1,0 +1,42 @@
+{
+  "projectType": "library",
+  "root": "libs/web/shell",
+  "sourceRoot": "libs/web/shell/src",
+  "prefix": "ct",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/angular:ng-packagr-lite",
+      "outputs": ["dist/libs/web/shell"],
+      "options": {
+        "project": "libs/web/shell/ng-package.json"
+      },
+      "configurations": {
+        "production": {
+          "tsConfig": "libs/web/shell/tsconfig.lib.prod.json"
+        },
+        "development": {
+          "tsConfig": "libs/web/shell/tsconfig.lib.json"
+        }
+      },
+      "defaultConfiguration": "production"
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/web/shell"],
+      "options": {
+        "jestConfig": "libs/web/shell/jest.config.js",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/web/shell/src/**/*.ts",
+          "libs/web/shell/src/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": ["scope:web", "type:shell"]
+}

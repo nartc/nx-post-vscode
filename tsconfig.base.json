@@ -65,7 +65,8 @@
       ],
       "@nx-post-vscode/web/shared/data-access-api-sdk": [
         "libs/web/shared/data-access-api-sdk/src/index.ts"
-      ]
+      ],
+      "@nx-post-vscode/web/shell": ["libs/web/shell/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
