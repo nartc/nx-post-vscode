@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { API_BASE_URL } from '@nx-post-vscode/web/shared-data-access-api-sdk';
+import { API_BASE_URL } from '@nx-post-vscode/web/shared/data-access-api-sdk';
 import { environment } from '../environments/environment';
 import { AppComponent } from './app.component';
 

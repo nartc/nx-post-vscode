@@ -68,7 +68,7 @@
       "enumNameGeneratorType": null,
       "serviceHost": null,
       "serviceSchemes": null,
-      "output": "libs/web/shared-data-access-api-sdk/src/index.ts",
+      "output": "libs/web/shared/data-access-api-sdk/src/index.ts",
       "newLineBehavior": "Auto"
     }
   }
