@@ -2,6 +2,6 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'ct-root',
-  template: `app`,
+  template: `<button>Submit</button>`,
 })
 export class AppComponent {}

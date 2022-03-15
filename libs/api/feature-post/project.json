@@ -5,30 +5,44 @@
   "targets": {
     "build": {
       "executor": "@nrwl/js:tsc",
-      "outputs": ["{options.outputPath}"],
+      "outputs": [
+        "{options.outputPath}"
+      ],
       "options": {
         "outputPath": "dist/libs/api/feature-post",
         "tsConfig": "libs/api/feature-post/tsconfig.lib.json",
         "packageJson": "libs/api/feature-post/package.json",
         "main": "libs/api/feature-post/src/index.ts",
-        "assets": ["libs/api/feature-post/*.md"]
+        "assets": [
+          "libs/api/feature-post/*.md"
+        ]
       }
     },
     "lint": {
       "executor": "@nrwl/linter:eslint",
-      "outputs": ["{options.outputFile}"],
+      "outputs": [
+        "{options.outputFile}"
+      ],
       "options": {
-        "lintFilePatterns": ["libs/api/feature-post/**/*.ts"]
+        "lintFilePatterns": [
+          "libs/api/feature-post/**/*.ts"
+        ]
       }
     },
     "test": {
       "executor": "@nrwl/jest:jest",
-      "outputs": ["coverage/libs/api/feature-post"],
+      "outputs": [
+        "coverage/libs/api/feature-post"
+      ],
       "options": {
         "jestConfig": "libs/api/feature-post/jest.config.js",
         "passWithNoTests": true
       }
     }
   },
-  "tags": ["scope:api", "type:feature", "context:post"]
+  "tags": [
+    "scope:api",
+    "type:feature",
+    "context:post"
+  ]
 }

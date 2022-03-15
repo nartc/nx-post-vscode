@@ -4,30 +4,44 @@
   "targets": {
     "build": {
       "executor": "@nrwl/js:tsc",
-      "outputs": ["{options.outputPath}"],
+      "outputs": [
+        "{options.outputPath}"
+      ],
       "options": {
         "outputPath": "dist/libs/api/shared-data-access-dtos",
         "tsConfig": "libs/api/shared-data-access-dtos/tsconfig.lib.json",
         "packageJson": "libs/api/shared-data-access-dtos/package.json",
         "main": "libs/api/shared-data-access-dtos/src/index.ts",
-        "assets": ["libs/api/shared-data-access-dtos/*.md"]
+        "assets": [
+          "libs/api/shared-data-access-dtos/*.md"
+        ]
       }
     },
     "lint": {
       "executor": "@nrwl/linter:eslint",
-      "outputs": ["{options.outputFile}"],
+      "outputs": [
+        "{options.outputFile}"
+      ],
       "options": {
-        "lintFilePatterns": ["libs/api/shared-data-access-dtos/**/*.ts"]
+        "lintFilePatterns": [
+          "libs/api/shared-data-access-dtos/**/*.ts"
+        ]
       }
     },
     "test": {
       "executor": "@nrwl/jest:jest",
-      "outputs": ["coverage/libs/api/shared-data-access-dtos"],
+      "outputs": [
+        "coverage/libs/api/shared-data-access-dtos"
+      ],
       "options": {
         "jestConfig": "libs/api/shared-data-access-dtos/jest.config.js",
         "passWithNoTests": true
       }
     }
   },
-  "tags": ["scope:api", "type:data-access", "context:shared"]
+  "tags": [
+    "scope:api",
+    "type:data-access",
+    "context:shared"
+  ]
 }

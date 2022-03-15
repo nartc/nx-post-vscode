@@ -6,7 +6,9 @@
   "targets": {
     "build": {
       "executor": "@nrwl/angular:ng-packagr-lite",
-      "outputs": ["dist/libs/web/shared/data-access-api-sdk"],
+      "outputs": [
+        "dist/libs/web/shared/data-access-api-sdk"
+      ],
       "options": {
         "project": "libs/web/shared/data-access-api-sdk/ng-package.json"
       },
@@ -21,5 +23,9 @@
       "defaultConfiguration": "production"
     }
   },
-  "tags": ["scope:web", "type:data-access", "context:shared"]
+  "tags": [
+    "scope:web",
+    "type:data-access",
+    "context:shared"
+  ]
 }

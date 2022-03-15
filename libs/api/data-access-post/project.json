@@ -5,30 +5,44 @@
   "targets": {
     "build": {
       "executor": "@nrwl/js:tsc",
-      "outputs": ["{options.outputPath}"],
+      "outputs": [
+        "{options.outputPath}"
+      ],
       "options": {
         "outputPath": "dist/libs/api/data-access-post",
         "tsConfig": "libs/api/data-access-post/tsconfig.lib.json",
         "packageJson": "libs/api/data-access-post/package.json",
         "main": "libs/api/data-access-post/src/index.ts",
-        "assets": ["libs/api/data-access-post/*.md"]
+        "assets": [
+          "libs/api/data-access-post/*.md"
+        ]
       }
     },
     "lint": {
       "executor": "@nrwl/linter:eslint",
-      "outputs": ["{options.outputFile}"],
+      "outputs": [
+        "{options.outputFile}"
+      ],
       "options": {
-        "lintFilePatterns": ["libs/api/data-access-post/**/*.ts"]
+        "lintFilePatterns": [
+          "libs/api/data-access-post/**/*.ts"
+        ]
       }
     },
     "test": {
       "executor": "@nrwl/jest:jest",
-      "outputs": ["coverage/libs/api/data-access-post"],
+      "outputs": [
+        "coverage/libs/api/data-access-post"
+      ],
       "options": {
         "jestConfig": "libs/api/data-access-post/jest.config.js",
         "passWithNoTests": true
       }
     }
   },
-  "tags": ["scope:api", "type:data-access", "context:post"]
+  "tags": [
+    "scope:api",
+    "type:data-access",
+    "context:post"
+  ]
 }

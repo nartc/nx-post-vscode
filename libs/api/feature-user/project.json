@@ -5,30 +5,44 @@
   "targets": {
     "build": {
       "executor": "@nrwl/js:tsc",
-      "outputs": ["{options.outputPath}"],
+      "outputs": [
+        "{options.outputPath}"
+      ],
       "options": {
         "outputPath": "dist/libs/api/feature-user",
         "tsConfig": "libs/api/feature-user/tsconfig.lib.json",
         "packageJson": "libs/api/feature-user/package.json",
         "main": "libs/api/feature-user/src/index.ts",
-        "assets": ["libs/api/feature-user/*.md"]
+        "assets": [
+          "libs/api/feature-user/*.md"
+        ]
       }
     },
     "lint": {
       "executor": "@nrwl/linter:eslint",
-      "outputs": ["{options.outputFile}"],
+      "outputs": [
+        "{options.outputFile}"
+      ],
       "options": {
-        "lintFilePatterns": ["libs/api/feature-user/**/*.ts"]
+        "lintFilePatterns": [
+          "libs/api/feature-user/**/*.ts"
+        ]
       }
     },
     "test": {
       "executor": "@nrwl/jest:jest",
-      "outputs": ["coverage/libs/api/feature-user"],
+      "outputs": [
+        "coverage/libs/api/feature-user"
+      ],
       "options": {
         "jestConfig": "libs/api/feature-user/jest.config.js",
         "passWithNoTests": true
       }
     }
   },
-  "tags": ["scope:api", "type:feature", "context:user"]
+  "tags": [
+    "scope:api",
+    "type:feature",
+    "context:user"
+  ]
 }
