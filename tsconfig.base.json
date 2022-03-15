@@ -63,6 +63,12 @@
       "@nx-post-vscode/api/utils-config": [
         "libs/api/utils-config/src/index.ts"
       ],
+      "@nx-post-vscode/web/feature-login": [
+        "libs/web/feature-login/src/index.ts"
+      ],
+      "@nx-post-vscode/web/feature-register": [
+        "libs/web/feature-register/src/index.ts"
+      ],
       "@nx-post-vscode/web/shared/data-access-api-sdk": [
         "libs/web/shared/data-access-api-sdk/src/index.ts"
       ],
